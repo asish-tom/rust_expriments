@@ -13,6 +13,7 @@ fn main() {
     cool_it_got_rid_of_shitty_ass_ascii();
     tuple_test();
     ok_lets_see_array();
+    lets_play_with_function();
 
 }
 
@@ -77,4 +78,19 @@ fn ok_lets_see_array(){
      println!("Ok print first {} ", a[0] );
     let first = a[0];
     let second = a[1];
+
 }
+
+fn lets_play_with_function(){
+    inner_fun(23);
+    println!("Ok print this return: {}", inner_fun(45));
+    println!("Some thing cool");
+    fn inner_fun(x: i32) -> i32{
+        println!("Ok fine find that return value your self!");
+        67 * x
+    }
+    inner_fun(45);
+
+}
+
+
