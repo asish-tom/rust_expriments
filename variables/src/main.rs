@@ -12,6 +12,7 @@ fn main() {
     testing_basic_math();
     cool_it_got_rid_of_shitty_ass_ascii();
     tuple_test();
+    ok_lets_see_array();
 
 }
 
@@ -68,4 +69,12 @@ fn tuple_test() {
     let (x, y, z) = tup;
     println!("Ok print my tuple {} {} {}", x, y, z );
     println!("Ok print my tuple with dot optr {} {} {}", tup.0, tup.1, tup.2);
+}
+
+
+fn ok_lets_see_array(){
+    let a = [1, 2, 3, 4, 5];
+     println!("Ok print first {} ", a[0] );
+    let first = a[0];
+    let second = a[1];
 }
