@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager">
-    <output url="file://$PROJECT_DIR$/out" />
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/variables/src/main.rs" />
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$PROJECT_DIR$/../.cargo/bin" />
+    <option name="useCargoCheckAnnotator" value="true" />
+    <option name="useOfflineForCargoCheck" value="true" />
+    <option name="useSkipChildren" value="true" />
+  </component>
+  <component name="XMakeProjectSettings">
+    <option name="currentArchitecture" value="x86_64" />
+    <option name="workingDirectory" value="$PROJECT_DIR$" />
   </component>
 </project>
