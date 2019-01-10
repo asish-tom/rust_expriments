@@ -8,6 +8,7 @@ fn main() {
     shadowing_test();
     shadowing_test_1();
     shadowing_vs_mutation();
+    understanding_floating_points();
 
 }
 
@@ -32,6 +33,13 @@ fn shadowing_test_1() {
 
 fn shadowing_vs_mutation() {
     let mut spaces = "   ";
-    spaces = spaces.len();
+//    spaces = spaces.len();
     println!("The space between words {}", spaces)
+}
+
+fn understanding_floating_points() {
+    let x = 2.0; // f64
+    let y: f32 = 3.0; // f32
+    println!("Sum of the floats: {}", x+y);
+
 }
