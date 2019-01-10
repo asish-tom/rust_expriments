@@ -9,6 +9,9 @@ fn main() {
     shadowing_test_1();
     shadowing_vs_mutation();
     understanding_floating_points();
+    testing_basic_math();
+    cool_it_got_rid_of_shitty_ass_ascii();
+    tuple_test();
 
 }
 
@@ -42,4 +45,27 @@ fn understanding_floating_points() {
     let y: f32 = 3.0; // f32
     println!("Sum of the floats: {}", x+y);
 
+}
+
+fn testing_basic_math() {
+    println!("Sum of the ints: {}", 5 + 10);
+    println!("Dif of the floats: {}", 95.5 - 4.3);
+    println!("Product of ints {}", 4 * 30);
+    println!("Quotient of floats {}", 56.7 / 32.2);
+    println!("remainder of ints {}", 43 % 5);
+}
+
+fn cool_it_got_rid_of_shitty_ass_ascii() {
+    let c = 'z';
+    let z = 'ℤ';
+    let heart_eyed_cat = '😻';
+    println!("Cat with heart {}",heart_eyed_cat);
+}
+
+
+fn tuple_test() {
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("Ok print my tuple {} {} {}", x, y, z );
+    println!("Ok print my tuple with dot optr {} {} {}", tup.0, tup.1, tup.2);
 }
